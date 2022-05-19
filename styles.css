@@ -1,0 +1,88 @@
+body {
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+  font-size: 18px;
+  margin: 0;
+}
+
+button {
+  font-size: inherit;
+}
+
+h3 {
+  margin: 0;
+}
+
+.list-of-books {
+  margin: 20px;
+  display: grid;
+  gap: 10px;
+}
+
+.book {
+  display: flex;
+  gap: 10px;
+}
+
+.delete {
+  margin-left: auto;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  padding: 0;
+}
+
+.form {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#book-form {
+  background-color: #b4b4b4;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.input {
+  margin: 20px;
+}
+
+input {
+  height: 2rem;
+  font-size: 16px;
+  padding: 0 10px;
+  border: none;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  border: none;
+}
+
+input[type="checkbox"]:checked {
+  border: none;
+}
+
+.form button {
+  border: none;
+  padding: 10px 20px;
+}

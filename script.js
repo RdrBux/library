@@ -33,7 +33,7 @@ function refreshLibrary() {
   for (let i = 0, n = myLibrary.length; i < n; i++) {
     const book = document.createElement("div");
     book.className = "book";
-    book.textContent = `${myLibrary[i].title} by ${myLibrary[i].author}, ${myLibrary[i].pages} pages. ${myLibrary[i].read}.`;
+    book.textContent = `${myLibrary[i].title} by ${myLibrary[i].author}, ${myLibrary[i].pages} pages.`;
 
     // Add "read" button
     const btnRead = document.createElement("button");
@@ -51,7 +51,7 @@ function refreshLibrary() {
     // Add "remove" button
     const btnRemove = document.createElement("button");
     btnRemove.className = "delete";
-    btnRemove.innerHTML = "Remove";
+    btnRemove.innerHTML = "X";
     btnRemove.addEventListener("click", function (e) {
       myLibrary.splice(i, 1);
       refreshLibrary();
