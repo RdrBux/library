@@ -1,3 +1,13 @@
+// Book object
+class Book {
+  constructor(author, title, pages, read) {
+    this.author = author;
+    this.title = title;
+    this.pages = pages;
+    this.read = read === "on" ? "Read" : "Not read yet";
+  }
+}
+
 // Test Books
 const bookTest = new Book(
   "Antoine de Saint-Exupéry",
@@ -9,14 +19,6 @@ const bookTest = new Book(
 const bookTest2 = new Book("Herman Melville", "Moby Dick", 378, "off");
 
 let myLibrary = [bookTest, bookTest2];
-
-// Book object
-function Book(author, title, pages, read) {
-  this.author = author;
-  this.title = title;
-  this.pages = pages;
-  this.read = read === "on" ? "Read" : "Not read yet";
-}
 
 function addBookToLibrary(author, title, pages, read = "off") {
   const newBook = new Book(author, title, pages, read);
@@ -79,8 +81,8 @@ function handleSubmit(e) {
   const formData = new FormData(e.target);
   const formProps = Object.fromEntries(formData);
   addBookToLibrary(
-    formProps.title,
     formProps.author,
+    formProps.title,
     formProps.pages,
     formProps.read
   );
