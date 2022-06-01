@@ -18,10 +18,22 @@
         <form id="book-form" style="display: none">
           <h3>Add new book</h3>
           <div class="input">
-            <input type="text" id="title" name="title" placeholder="Title" />
+            <input
+              type="text"
+              id="title"
+              name="title"
+              placeholder="Title"
+              required
+            />
           </div>
           <div class="input">
-            <input type="text" id="author" name="author" placeholder="Author" />
+            <input
+              type="text"
+              id="author"
+              name="author"
+              placeholder="Author"
+              required
+            />
           </div>
           <div class="input">
             <input
@@ -29,6 +41,8 @@
               id="pages"
               name="pages"
               placeholder="Number of pages"
+              required
+              min="1"
             />
           </div>
           <div class="input checkbox">
